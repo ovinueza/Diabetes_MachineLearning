@@ -1,0 +1,110 @@
+body {
+    margin: auto;
+    background: #174e75;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./images/medical_back_ground2.png');
+    background-size: cover;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.inline-block {
+    display: inline-block;
+ }
+ 
+.disclaimer {
+    position:fixed;
+    background-color:aquamarine;
+    width:100%;
+    left:0;
+    bottom:0;
+    }
+.disclaimer p {
+      text-align:center;
+      }
+
+
+
+.this-container {
+    justify-content: space-between;
+    }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #A0C5E8;
+    padding: 10px 0;
+    }
+    
+    span {
+    width: 50px;
+    height: 50px;
+    background: black;
+    }
+
+#viz1619021545351{
+    width:80% !important;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #174e75;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+
+.col {
+    display:table-cell;
+    padding:10px;
+}
+
+
+.alert {
+    background: #3425ff;
+    /* text-align:"center"; */
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    margin: 1rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    column {
+        flex:50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}

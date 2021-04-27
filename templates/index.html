@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diabetes Awarness</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="../static/final.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar-brand"></a> 
+      
+      </div>
+      <div class="navbar" id="myNavbar">
+      <ul class="nav-navbar-nav">
+          <li><a href="https://www.cdc.gov/diabetes/index.html" rel="noopener noreferrer" target="_blank"><b>CDC</b></a></li>
+          <li><a href="https://www.diabetes.org/" rel="noopener noreferrer" target="blank"><b>American Diabetes Association</b></a></li>
+          <li><a href="https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444" rel="noopener noreferrer" target="blank"><b>Mayo Clinic</b></a></li>
+          <li><a href="https://data.world/informatics-edu/diabetes-prediction" rel="noopener noreferrer" target="blank"><b>Data World</b></a></li>
+          <li><a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html" rel="noopener noreferrer" target="blank"><b>BMI Calculator</b></a></li>
+          <li><a href="https://www.calorieking.com/us/en/tools/waist-hip-ratio-calculator/" rel="noopener noreferrer" target="blank"><b>Waist/Hip Calculator</b></a></li>
+          
+      </ul>
+      
+      </div>
+  </div>
+</nav>
+    
+<div class="container text-center">    
+  <h1 class= "header" style ="color:white"><b>Diabetes Awareness</b></h1><br>
+                <p style="font-size:20px; color:white">Diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose comes from the foods you eat. Insulin is a hormone that helps the glucose get into your cells to give them energy. With type 1 diabetes, your body does not make insulin. With type 2 diabetes, the more common type, your body does not make or use insulin well. Without enough insulin, the glucose stays in your blood. You can also have prediabetes. This means that your blood sugar is higher than normal but not high enough to be called diabetes. Having prediabetes puts you at a higher risk of getting type 2 diabetes.</p>
+                <div id="division" class="panel-body"></div>
+</div> 
+
+<div class="container text-center">
+  <div class ="row">
+    <!-- <div class='col-md-1' ></div> -->
+
+
+    <div class='d-flex justify-content-start' style='width:80%'>
+
+      <div class='tableauPlaceholder' id='viz1619038018244' style='position: relative'><noscript><a href='#'><img alt='Diabetes ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_16190206634490&#47;Diabetes&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Diabetes_16190206634490&#47;Diabetes' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;Diabetes_16190206634490&#47;Diabetes&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1619038018244');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </div>
+
+      <div class="content">
+      </div>
+
+    <div class='d-flex justify-content-center'>
+      <h4 class="text" style= "color: white">Health Check Up</h4>
+      
+      <form action="/send" method="POST">
+
+        <label for="Number One" style ="color:white">A1C</label>
+        <br>
+        <input
+          type="number"
+          step="0.1"
+          placeholder="A1C"
+          class="u-full-width"
+          name="num1"
+        />
+        <br>
+        <br>
+        <label for="Number Two" style ="color:white">Weight</label>
+        <br>
+        <input
+          type="number"
+          placeholder="Weight"
+          class="u-full-width"
+          name="num2"
+        />
+        <br>
+        <br>
+        <label for="Number Three" style ="color:white">Systolic Blood Pressure</label>
+        <br>
+        <input
+          type="number"
+          placeholder="SystolicBP"
+          class="u-full-width"
+          name="num3"
+        />
+        <br>
+        <br>
+        <label for="Number four" style ="color:white">Height</label>
+        <br>
+        <input
+          type="number"
+          
+          placeholder="Height"
+          class="u-full-width"
+          name="num4"
+        /><br>
+        <br>
+  
+        <label for="Number five" style ="color:white">Age</label>
+        <br>
+        <input
+          type="number"
+          placeholder="Age"
+          class="u-full-width"
+          name="num5"
+        /><br>
+        <br>
+  
+        <label for="Number six" style ="color:white">Waist/Hip Ratio</label>
+        <br>
+        <input
+          type="number"
+          step="0.1"
+          placeholder="WHratio"
+          class="u-full-width"
+          name="num6"
+        /><br>
+        <br>
+        
+       
+        <br>
+        <br>
+        <label for="Operation" style ="color:white">Operation</label> <br>
+        <select class="u-full-width" name="operation">
+          <option value="randomforest">RandomForrest</option>
+          <option value="decisiontree">DesicionTree</option>
+        </select>
+  
+        <input type="submit" value="Calculate" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ sum }}
+        </div>
+      </form>
+  </div>
+  <div class='col-md-1' >
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- A1C -->
+<div class="container text-center">    
+  <h1 class= "header" style ="color:white">A1C</h1><hr>
+                <p style="font-size:20px; color:white">A1C is defined as an estimated average of glucose (eAG). This relatively simple blood test can tell you a lot. The test results give you a picture of your average blood sugar level over the past two to three months. The higher the levels, the greater your risk of developing diabetes complications. </p>                <div class="col-lg-12 my-5 mx-2 p-5">
+                  
+                  <img src="static/images/A1C_Scale@2x.png" class="float-left mr-3 about-img img-responsive" width="100%" alt="Scatterplot of Latitude vs. Cloudiness">
+                  <br>
+                  <br>
+                  <p style="color:white"><strong>More information click</strong> <a href="https://www.cdc.gov/diabetes/library/features/truth-about-prediabetes.html" rel="noopener noreferrer" target="_blank"><b>here </b></a></li>
+                  </p>
+              </div>
+              <div id="division" class="panel-body"></div>
+</div> 
+
+<!-- A1C Image -->
+<!-- <div class="container text-center ">
+  <div class="row">
+      <div class="col-lg-12 my-5 mx-2 p-5">
+          <hr>
+          <img src="static/images/A1C_Scale@2x.png" class="float-left mr-3 about-img img-responsive" width="100%" alt="Scatterplot of Latitude vs. Cloudiness">
+          <br>
+          <br>
+          <p style="color:white"><strong>What does it mean?</strong> A1C test results are reported as a percentage. The higher the percentage, the higher your blood sugar levels over the past two to three months. 
+          </p>
+      </div>
+  </div>
+</div> -->
+
+<br>
+<br>
+<br>
+<br>
+<!-- ML Header -->
+<div class="container text-center">    
+  <h1 class= "header" style ="color:white"><b>Model Explanation</b></h1><br>
+                <p style="font-size:20px; color:white">In machine learning, classification refers to a predictive modeling problem where a class label is predicted for a given example of input data. In our model the labels are Diabetes and No diabetes.</p>
+                <div id="division" class="panel-body"></div>
+</div> 
+
+<!-- ML Explanation Section -->
+<div class="container text-center ">
+  <div class="row">
+    <div class="col-lg-12 my-8 mx-2 p-5">
+      <h2 class="display-5 text-info" style="color:white">Decision Tree Model</h2>
+      <hr>
+      <p style="font-size:20px; color:white">Decision trees are used to solve both classification and regression problems in the form of trees that can be incrementally updated by splitting the dataset into smaller datasets (numerical and categorical), where the results are represented in the leaf nodes.</p>
+      <br>
+      <a href= "static/images/Diabetes_DecisionTree.png" target="_blank">
+      <img src="static/images/Diabetes_DecisionTree.png" class="float-left mr-3 about-img img-responsive"  alt="Decision Tree Variables of Importance">
+      </a>
+      <br>
+      <br>
+      <p style="font-size:20px; color:white">In this case the Decision Tree model puts a heavy emphasis on A1C. But can one variable truly explain the entire model?</p>
+      <br>
+
+          <img src="static/images/DecisionTree_FeatureImportances.png" class=" center img-responsive float-lg-left m-2" width="80%" alt="Decision Tree">
+
+        <br>
+        <br>
+            <img src ="static/images/DecisionTree_confusion_matrix.png" class="center img-responsive float-lg-right m-2" width="70%" alt="Decision Tree">
+
+    </div>
+      <!-- <img src="static/images/DecisionTree_FeatureImportances.png" class="float-left mr-3 about-img img-responsive" width="70%" alt="Scatterplot of Latitude vs. Temperature"> -->
+      
+  </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="container text-center ">
+  <div class="row">
+    <div class="col-lg-12 my-8 mx-2 p-5">
+      <h2 class="display-5 text-info" style="color:white">Random Forest Model</h2>
+      <hr>
+      <p style="font-size:20px; color:white">Random Forest models build multiple decision trees and merges them together to get a more accurate and stable prediction. One big advantage of random forest is that we can control overfitting by having more trees in the model and using other parameters for better tuning.</p>
+      <br>
+
+          <img src="static/images/RandomForest_FeatureImportances.png" class=" center float-left mr-3 about-img img-responsive" width="80%" alt="RF feature importance">
+          <br>
+          <br>
+          <img src="static/images/Random_Forest_confusion_matrix.png" class=" center float-left mr-3 about-img img-responsive" width="70%" alt="RF confusion matrix">
+
+    </div>
+     
+
+      <!-- <p style="color:white"><strong>Features:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam minima, porro exercitationem provident, perspiciatis cumque rerum fugit recusandae, et iusto consequuntur vero voluptates ut repudiandae facere temporibus eligendi voluptatibus.</p> -->
+      <!-- <p><strong>Methods:</strong> 600 unique cities which were selected based on their close proximity to randomly generated unique Latitude/Longitude coordinate pairs using a public python program, citypy. Then, utlizing OpenWeatherApp API to acquire additional data points, we created a series of scatter plots to showcase the relationships and visualize correlations across Latitude/Longitude and four weather metrics, Temperature, Humidity, Cloudiness and Wind Speed. The results are presented on this website. -->
+      </p>
+  </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container text-center">
+
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="card text-dark bg-light mb-3">
+            <div class="card-header" style =" font-size:30px; color:white" ><strong>Conclusion</strong></div>
+            <div class="card-body" >
+                <p class="card-text" style="color:white">
+                <ul>
+                    <p style=" font-size:20px; color:white">  </p>
+                    <p style=" font-size:20px; color:white"> A1C is the main predictor, but be careful when used in an machine learning model. </p>
+                    <p style=" font-size:20px; color:white"> Trends in the United States show an increase in diabetes cases with at risk groups.</p>  
+                    <p style=" font-size:20px; color:white"> As obesity cases increase so do diabetes cases.</p>
+                    <p style=" font-size:20px; color:white"> </p>
+                 </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card text-dark bg-light mb-3">
+              <div class="card-header" style =" font-size:30px; color:white" ><strong>Next Steps</strong></div>
+              <div class="card-body" >
+                  <p class="card-text" style="color:white">
+                  <ul>
+                      <p style=" font-size:20px; color:white">  </p>
+                      <p style=" font-size:20px; color:white"> Obtain more data with demographic information to train the models further. </p>
+                      <p style=" font-size:20px; color:white"> Test other possible models. </p>  
+                      <p style=" font-size:20px; color:white"> Add a data collection feature. </p>
+                      <p style=" font-size:20px; color:white"> Deploy app.</p>
+                      <p style=" font-size:20px; color:white"> </p>
+                   </ul>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card text-dark bg-light mb-3">
+              <div class="card-header" style ="font-size:30px; color:white"><strong>Data Dictionary</strong></div>
+              <div class="card-body">
+                  <p class="card-text" style="color:white">
+                    <table border="1" class="center" style="font-size:20px; color:white;">  <thead>    <tr style="text-align: right; color:white">      <th style="text-align: center;">Attribute     </th>      <th style="text-align: center;">Description</th>    </tr>    <tr>      <th></th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th style="text-align: center;">Patient Number</th>      <td>Identifies patients by number</td>    </tr>    <tr>      <th style="text-align: center;">Cholesterol</th>      <td>Total cholesterol</td>    </tr>    <tr>      <th style="text-align: center;">Glucose</th>      <td>Fasting blood sugar</td>    </tr>    <tr>      <th style="text-align: center;">HDL</th>      <td>HDL or good cholesterol</td>    </tr>    <tr>      <th style="text-align: center;">Age</th>      <td>All Adults</td>    </tr>    <tr>      <th style="text-align: center;">Gender</th>      <td>male/female</td>    </tr>    <tr>      <th style="text-align: center;">Height</th>      <td>Inches</td>    </tr>    <tr>      <th style="text-align: center;">Weight</th>      <td>Pounds(lbs)</td>    </tr>    <tr>      <th style="text-align: center;">BMI</th>      <td>703 x weight (lbs)/ [height(inches]2</td>    </tr>    <tr>      <th style="text-align: center;">Systolic BP</th>      <td>The upper number of blood pressure</td>    </tr>    <tr>      <th style="text-align: center;">Diastolic BP</th>      <td>The lower number of blood pressure</td>    </tr>    <tr>      <th style="text-align: center;">Waist</th>      <td>Measured in inches</td>    </tr>    <tr>      <th style="text-align: center;">Hip</th>      <td>Measured in inches</td>    </tr>    <tr>      <th style="text-align: center;">Waist/Hip</th>      <td>Ratio is possibly a stronger risk factor for heart disease than BMI  </td>    </tr>    <tr>      <th style="text-align: center;">Diabetes</th>      <td>Yes/No</td>    </tr>  </tbody></table>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card text-dark bg-light mb-3">
+              <div class="card-header" style ="font-size:30px; color:white"><strong>Special Thanks</strong></div>
+              <div class="card-body">
+                  <p class="card-text" style="color:white">
+                    <ul>
+                        <li style=" font-size:20px; color:white">  </li>
+                        
+                        <p style="font-size:20px; color:white">Joy Snow (mentor)</p>
+                       
+                        <p style="font-size:20px; color:white">Jessica Tsai (tech advise)</p>
+                        
+                        <p style="font-size:20px; color:white">Justin Moon (tech advise)</p>
+                        
+                        <p style="font-size:20px; color:white">C13 Instructional Team</p>
+                        <li style=" font-size:20px; color:white">  </li>
+                  </ul>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+</body>
+
+
+    <footer style = "position:relative;margin-top: -180px; height: 45px; clear:both;background-color:aquamarine;width:100%;left:0;bottom:0;display: inline-block;">
+      <p>Disclaimer: The materials on this site are for your general educational information only. 
+        The information you read on this website cannot replace the relationship and diagnosis that
+        you recieve with your healthcare professional. All data entry is subject to anonymity, but 
+        is given at your own risk. The website operators should not be held liable if any user suffers
+        injury or loss. 
+       </p>
+  
+      </footer>
+
+    </html> 
